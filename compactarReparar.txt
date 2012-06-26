@@ -1,0 +1,52 @@
+Private Sub compactarReparar_Dao(ByVal origem As String, ByVal destino As String)
+        Me.Cursor = Cursors.WaitCursor
+        Dim db As DAO.DBEngine
+
+        Try
+            db = New DAO.DBEngine()
+
+            File.Copy(origem & "\rmd_data.rmd", destino & "\rmd_data_" & Convert_Data_Completa(Now) & ".rmd")
+            File.Copy(origem & "\rmd_base.rmd", destino & "\rmd_base_" & Convert_Data_Completa(Now) & ".rmd")
+
+            db.CompactDatabase(origem & "\rmd_data.rmd", origem & "\rmd_data1.tmp", , , ";PWD=SenhaBanco")
+            db.CompactDatabase(origem & "\rmd_base.rmd", origem & "\rmd_base1.tmp", , , ";PWD=SenhaBanco")
+
+            If File.Exists(origem & "\rmd_data.rmd") And File.Exists(origem & "\rmd_data1.tmp") Then
+                Kill(origem & "\rmd_data.rmd")
+            Else
+                MsgBox("Erro de reparação e compactação.", MsgBoxStyle.Critical, "Erro")
+                Exit Sub
+            End If
+            If File.Exists(origem & "\rmd_base.rmd") And File.Exists(origem & "\rmd_base1.tmp") Then
+                Kill(origem & "\rmd_base.rmd")
+            Else
+                MsgBox("Erro de reparação e compactação.", MsgBoxStyle.Critical, "Erro")
+                Exit Sub
+            End If
+
+            'File.Copy("C:\RMDSolution\BD\rmd_data1.rmd", "C:\RMDSolution\BD\rmd_data.rmd")
+            db.CompactDatabase(origem & "\rmd_data1.tmp", origem & "\rmd_data.rmd", , , ";PWD=SenhaBanco")
+            db.CompactDatabase(origem & "\rmd_base1.tmp", origem & "\rmd_base.rmd", , , ";PWD=SenhaBanco")
+
+            If File.Exists(origem & "\rmd_data1.tmp") And File.Exists(origem & "\rmd_data.rmd") Then
+                Kill(origem & "\rmd_data1.tmp")
+            Else
+                MsgBox("Erro de reparação e compactação.", MsgBoxStyle.Critical, "Erro")
+                Exit Sub
+            End If
+            If File.Exists(origem & "\rmd_base1.tmp") And File.Exists(origem & "\rmd_base.rmd") Then
+                Kill(origem & "\rmd_base1.tmp")
+            Else
+                MsgBox("Erro de reparação e compactação.", MsgBoxStyle.Critical, "Erro")
+                Exit Sub
+            End If
+
+            MsgBox("Banco de dados reparado e compactado com sucesso.", MsgBoxStyle.Information, "Reparação e compactação")
+            Me.Cursor = Cursors.Default
+            Me.Close()
+        Catch ex As System.Exception
+            MsgBox("O banco de dados não pode ser reparado e compactado!" & Chr(10) & "Verifique se não tem outros usuários conectados ao sistema." & Chr(10) & "Erro: " & ex.Message, MsgBoxStyle.Critical, "Erro")
+        Finally
+            Me.Cursor = Cursors.Default
+        End Try
+    End Sub

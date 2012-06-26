@@ -1,0 +1,21 @@
+C:\Users\Elson Ribeiro\Documents\Visual Studio 2008\Projects\Access Controller\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Elson Ribeiro\Documents\Visual Studio 2008\Projects\Access Controller\obj\Debug\Access_Controller.frmConfig.resources
+C:\Users\Elson Ribeiro\Documents\Visual Studio 2008\Projects\Access Controller\obj\Debug\Access_Controller.frmValidacao.resources
+C:\Users\Elson Ribeiro\Documents\Visual Studio 2008\Projects\Access Controller\obj\Debug\Access_Controller.frmMain.resources
+C:\Users\Elson Ribeiro\Documents\Visual Studio 2008\Projects\Access Controller\obj\Debug\Access_Controller.frmAbout.resources
+C:\Users\Elson Ribeiro\Documents\Visual Studio 2008\Projects\Access Controller\obj\Debug\Access_Controller.frmLogin.resources
+C:\Users\Elson Ribeiro\Documents\Visual Studio 2008\Projects\Access Controller\obj\Debug\Access_Controller.frmSplashScreen.resources
+C:\Users\Elson Ribeiro\Documents\Visual Studio 2008\Projects\Access Controller\obj\Debug\Access_Controller.Resources.resources
+C:\Users\Elson Ribeiro\Documents\Visual Studio 2008\Projects\Access Controller\obj\Debug\Access Controller.vbproj.GenerateResource.Cache
+C:\Users\Elson Ribeiro\Documents\Visual Studio 2008\Projects\Access Controller\bin\Debug\Access Controller.exe.config
+C:\Users\Elson Ribeiro\Documents\Visual Studio 2008\Projects\Access Controller\bin\Debug\Access Controller.exe
+C:\Users\Elson Ribeiro\Documents\Visual Studio 2008\Projects\Access Controller\bin\Debug\Access Controller.pdb
+C:\Users\Elson Ribeiro\Documents\Visual Studio 2008\Projects\Access Controller\bin\Debug\Access Controller.xml
+C:\Users\Elson Ribeiro\Documents\Visual Studio 2008\Projects\Access Controller\obj\Debug\Access_Controller.frmRelatorio.resources
+C:\Users\Elson Ribeiro\Documents\Visual Studio 2008\Projects\Access Controller\obj\Debug\Access_Controller.frmLimpaDados.resources
+C:\Users\Elson Ribeiro\Documents\Visual Studio 2008\Projects\Access Controller\obj\Debug\Access Controller.exe
+C:\Users\Elson Ribeiro\Documents\Visual Studio 2008\Projects\Access Controller\obj\Debug\Access Controller.xml
+C:\Users\Elson Ribeiro\Documents\Visual Studio 2008\Projects\Access Controller\obj\Debug\Access Controller.pdb
+C:\Users\Elson Ribeiro\Documents\Visual Studio 2008\Projects\Access Controller\obj\Debug\Access_Controller.frmRptViewer.resources
+C:\Users\Elson Ribeiro\Documents\Visual Studio 2008\Projects\Access Controller\obj\Debug\RdlCompile.cache
+C:\Users\Elson Ribeiro\Documents\Visual Studio 2008\Projects\Access Controller\obj\Debug\RdlCompile.compiled

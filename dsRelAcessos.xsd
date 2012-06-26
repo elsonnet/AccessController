@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsRelAcessos" targetNamespace="http://tempuri.org/dsRelAcessos.xsd" xmlns:mstns="http://tempuri.org/dsRelAcessos.xsd" xmlns="http://tempuri.org/dsRelAcessos.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsRelAcessos" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsRelAcessos" msprop:Generator_DataSetName="dsRelAcessos" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Acessos" msprop:Generator_UserTableName="Acessos" msprop:Generator_RowDeletedName="AcessosRowDeleted" msprop:Generator_RowChangedName="AcessosRowChanged" msprop:Generator_RowClassName="AcessosRow" msprop:Generator_RowChangingName="AcessosRowChanging" msprop:Generator_RowEvArgName="AcessosRowChangeEvent" msprop:Generator_RowEvHandlerName="AcessosRowChangeEventHandler" msprop:Generator_TableClassName="AcessosDataTable" msprop:Generator_TableVarName="tableAcessos" msprop:Generator_RowDeletingName="AcessosRowDeleting" msprop:Generator_TablePropName="Acessos">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CODIGO" msprop:Generator_UserColumnName="CODIGO" msprop:Generator_ColumnVarNameInTable="columnCODIGO" msprop:Generator_ColumnPropNameInRow="CODIGO" msprop:Generator_ColumnPropNameInTable="CODIGOColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="VENDIDOS" msprop:Generator_UserColumnName="VENDIDOS" msprop:Generator_ColumnVarNameInTable="columnVENDIDOS" msprop:Generator_ColumnPropNameInRow="VENDIDOS" msprop:Generator_ColumnPropNameInTable="VENDIDOSColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ACESSADOS" msprop:Generator_UserColumnName="ACESSADOS" msprop:Generator_ColumnVarNameInTable="columnACESSADOS" msprop:Generator_ColumnPropNameInRow="ACESSADOS" msprop:Generator_ColumnPropNameInTable="ACESSADOSColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="CANCELADOS" msprop:Generator_UserColumnName="CANCELADOS" msprop:Generator_ColumnVarNameInTable="columnCANCELADOS" msprop:Generator_ColumnPropNameInRow="CANCELADOS" msprop:Generator_ColumnPropNameInTable="CANCELADOSColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="DESCRICAO" msprop:Generator_UserColumnName="DESCRICAO" msprop:Generator_ColumnVarNameInTable="columnDESCRICAO" msprop:Generator_ColumnPropNameInRow="DESCRICAO" msprop:Generator_ColumnPropNameInTable="DESCRICAOColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Evento" msprop:Generator_UserTableName="Evento" msprop:Generator_RowDeletedName="EventoRowDeleted" msprop:Generator_TableClassName="EventoDataTable" msprop:Generator_RowChangedName="EventoRowChanged" msprop:Generator_RowClassName="EventoRow" msprop:Generator_RowChangingName="EventoRowChanging" msprop:Generator_RowEvArgName="EventoRowChangeEvent" msprop:Generator_RowEvHandlerName="EventoRowChangeEventHandler" msprop:Generator_TablePropName="Evento" msprop:Generator_TableVarName="tableEvento" msprop:Generator_RowDeletingName="EventoRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DESCRICAOEVENTO" msprop:Generator_UserColumnName="DESCRICAOEVENTO" msprop:Generator_ColumnPropNameInRow="DESCRICAOEVENTO" msprop:Generator_ColumnVarNameInTable="columnDESCRICAOEVENTO" msprop:Generator_ColumnPropNameInTable="DESCRICAOEVENTOColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="remotoProdutor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="u" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="s" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fantasiaProdutor" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="idProdutor" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="remotoProdutorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="remotoProdutorResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="u" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fantasiaProdutor" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="idProdutor" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="evAtivos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idProdutor" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="evAtivosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="evAtivosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="idProdutor" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ptAtivos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idProdutor" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="idEvento" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ptAtivosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ptAtivosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="idProdutor" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ptAtivosAll">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idProdutor" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="idEvento" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ptAtivosAllResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ptAtivosAllResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="idProdutor" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="evAtivosAll">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idProdutor" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="idEvento" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="evAtivosAllResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="evAtivosAllResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="idProdutor" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="atAtivos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idProdutor" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="idEvento" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="atAtivosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="atAtivosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="idProdutor" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ltAtivos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idProdutor" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="idEvento" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ltAtivosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ltAtivosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="idProdutor" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="pdAtivos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idProdutor" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="idEvento" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="pdAtivosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pdAtivosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="idProdutor" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="presidio">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idProdutor" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="port" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="presidioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="presidioResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="idProdutor" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cadeia">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idProdutor" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="port" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cadeiaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cadeiaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="idProdutor" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="presidio2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idProdutor" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="port" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="trsn" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="presidio2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="presidio2Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="idProdutor" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cadeia2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idProdutor" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="port" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="trsn" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cadeia2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cadeia2Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="idProdutor" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="remotoProdutorSoapIn">
+    <wsdl:part name="parameters" element="tns:remotoProdutor" />
+  </wsdl:message>
+  <wsdl:message name="remotoProdutorSoapOut">
+    <wsdl:part name="parameters" element="tns:remotoProdutorResponse" />
+  </wsdl:message>
+  <wsdl:message name="evAtivosSoapIn">
+    <wsdl:part name="parameters" element="tns:evAtivos" />
+  </wsdl:message>
+  <wsdl:message name="evAtivosSoapOut">
+    <wsdl:part name="parameters" element="tns:evAtivosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ptAtivosSoapIn">
+    <wsdl:part name="parameters" element="tns:ptAtivos" />
+  </wsdl:message>
+  <wsdl:message name="ptAtivosSoapOut">
+    <wsdl:part name="parameters" element="tns:ptAtivosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ptAtivosAllSoapIn">
+    <wsdl:part name="parameters" element="tns:ptAtivosAll" />
+  </wsdl:message>
+  <wsdl:message name="ptAtivosAllSoapOut">
+    <wsdl:part name="parameters" element="tns:ptAtivosAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="evAtivosAllSoapIn">
+    <wsdl:part name="parameters" element="tns:evAtivosAll" />
+  </wsdl:message>
+  <wsdl:message name="evAtivosAllSoapOut">
+    <wsdl:part name="parameters" element="tns:evAtivosAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="atAtivosSoapIn">
+    <wsdl:part name="parameters" element="tns:atAtivos" />
+  </wsdl:message>
+  <wsdl:message name="atAtivosSoapOut">
+    <wsdl:part name="parameters" element="tns:atAtivosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ltAtivosSoapIn">
+    <wsdl:part name="parameters" element="tns:ltAtivos" />
+  </wsdl:message>
+  <wsdl:message name="ltAtivosSoapOut">
+    <wsdl:part name="parameters" element="tns:ltAtivosResponse" />
+  </wsdl:message>
+  <wsdl:message name="pdAtivosSoapIn">
+    <wsdl:part name="parameters" element="tns:pdAtivos" />
+  </wsdl:message>
+  <wsdl:message name="pdAtivosSoapOut">
+    <wsdl:part name="parameters" element="tns:pdAtivosResponse" />
+  </wsdl:message>
+  <wsdl:message name="presidioSoapIn">
+    <wsdl:part name="parameters" element="tns:presidio" />
+  </wsdl:message>
+  <wsdl:message name="presidioSoapOut">
+    <wsdl:part name="parameters" element="tns:presidioResponse" />
+  </wsdl:message>
+  <wsdl:message name="cadeiaSoapIn">
+    <wsdl:part name="parameters" element="tns:cadeia" />
+  </wsdl:message>
+  <wsdl:message name="cadeiaSoapOut">
+    <wsdl:part name="parameters" element="tns:cadeiaResponse" />
+  </wsdl:message>
+  <wsdl:message name="presidio2SoapIn">
+    <wsdl:part name="parameters" element="tns:presidio2" />
+  </wsdl:message>
+  <wsdl:message name="presidio2SoapOut">
+    <wsdl:part name="parameters" element="tns:presidio2Response" />
+  </wsdl:message>
+  <wsdl:message name="cadeia2SoapIn">
+    <wsdl:part name="parameters" element="tns:cadeia2" />
+  </wsdl:message>
+  <wsdl:message name="cadeia2SoapOut">
+    <wsdl:part name="parameters" element="tns:cadeia2Response" />
+  </wsdl:message>
+  <wsdl:portType name="kkkSoap">
+    <wsdl:operation name="remotoProdutor">
+      <wsdl:input message="tns:remotoProdutorSoapIn" />
+      <wsdl:output message="tns:remotoProdutorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="evAtivos">
+      <wsdl:input message="tns:evAtivosSoapIn" />
+      <wsdl:output message="tns:evAtivosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ptAtivos">
+      <wsdl:input message="tns:ptAtivosSoapIn" />
+      <wsdl:output message="tns:ptAtivosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ptAtivosAll">
+      <wsdl:input message="tns:ptAtivosAllSoapIn" />
+      <wsdl:output message="tns:ptAtivosAllSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="evAtivosAll">
+      <wsdl:input message="tns:evAtivosAllSoapIn" />
+      <wsdl:output message="tns:evAtivosAllSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="atAtivos">
+      <wsdl:input message="tns:atAtivosSoapIn" />
+      <wsdl:output message="tns:atAtivosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ltAtivos">
+      <wsdl:input message="tns:ltAtivosSoapIn" />
+      <wsdl:output message="tns:ltAtivosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="pdAtivos">
+      <wsdl:input message="tns:pdAtivosSoapIn" />
+      <wsdl:output message="tns:pdAtivosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="presidio">
+      <wsdl:input message="tns:presidioSoapIn" />
+      <wsdl:output message="tns:presidioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="cadeia">
+      <wsdl:input message="tns:cadeiaSoapIn" />
+      <wsdl:output message="tns:cadeiaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="presidio2">
+      <wsdl:input message="tns:presidio2SoapIn" />
+      <wsdl:output message="tns:presidio2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="cadeia2">
+      <wsdl:input message="tns:cadeia2SoapIn" />
+      <wsdl:output message="tns:cadeia2SoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="kkkSoap" type="tns:kkkSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="remotoProdutor">
+      <soap:operation soapAction="http://tempuri.org/remotoProdutor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="evAtivos">
+      <soap:operation soapAction="http://tempuri.org/evAtivos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ptAtivos">
+      <soap:operation soapAction="http://tempuri.org/ptAtivos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ptAtivosAll">
+      <soap:operation soapAction="http://tempuri.org/ptAtivosAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="evAtivosAll">
+      <soap:operation soapAction="http://tempuri.org/evAtivosAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="atAtivos">
+      <soap:operation soapAction="http://tempuri.org/atAtivos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ltAtivos">
+      <soap:operation soapAction="http://tempuri.org/ltAtivos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pdAtivos">
+      <soap:operation soapAction="http://tempuri.org/pdAtivos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="presidio">
+      <soap:operation soapAction="http://tempuri.org/presidio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cadeia">
+      <soap:operation soapAction="http://tempuri.org/cadeia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="presidio2">
+      <soap:operation soapAction="http://tempuri.org/presidio2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cadeia2">
+      <soap:operation soapAction="http://tempuri.org/cadeia2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="kkkSoap12" type="tns:kkkSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="remotoProdutor">
+      <soap12:operation soapAction="http://tempuri.org/remotoProdutor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="evAtivos">
+      <soap12:operation soapAction="http://tempuri.org/evAtivos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ptAtivos">
+      <soap12:operation soapAction="http://tempuri.org/ptAtivos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ptAtivosAll">
+      <soap12:operation soapAction="http://tempuri.org/ptAtivosAll" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="evAtivosAll">
+      <soap12:operation soapAction="http://tempuri.org/evAtivosAll" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="atAtivos">
+      <soap12:operation soapAction="http://tempuri.org/atAtivos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ltAtivos">
+      <soap12:operation soapAction="http://tempuri.org/ltAtivos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pdAtivos">
+      <soap12:operation soapAction="http://tempuri.org/pdAtivos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="presidio">
+      <soap12:operation soapAction="http://tempuri.org/presidio" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cadeia">
+      <soap12:operation soapAction="http://tempuri.org/cadeia" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="presidio2">
+      <soap12:operation soapAction="http://tempuri.org/presidio2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cadeia2">
+      <soap12:operation soapAction="http://tempuri.org/cadeia2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="kkk">
+    <wsdl:port name="kkkSoap" binding="tns:kkkSoap">
+      <soap:address location="http://127.0.0.1/Sigei.Web.Sis/webservices/kkk.asmx" />
+    </wsdl:port>
+    <wsdl:port name="kkkSoap12" binding="tns:kkkSoap12">
+      <soap12:address location="http://127.0.0.1/Sigei.Web.Sis/webservices/kkk.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

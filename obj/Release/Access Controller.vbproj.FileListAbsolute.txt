@@ -1,0 +1,23 @@
+C:\Users\Elson Ribeiro\Documents\Visual Studio 2008\Projects\Access Controller\bin\Release\Access Controller.exe.config
+C:\Users\Elson Ribeiro\Documents\Visual Studio 2008\Projects\Access Controller\bin\Release\Access Controller.exe
+C:\Users\Elson Ribeiro\Documents\Visual Studio 2008\Projects\Access Controller\bin\Release\Access Controller.XmlSerializers.dll
+C:\Users\Elson Ribeiro\Documents\Visual Studio 2008\Projects\Access Controller\bin\Release\Access Controller.pdb
+C:\Users\Elson Ribeiro\Documents\Visual Studio 2008\Projects\Access Controller\bin\Release\Access Controller.xml
+C:\Users\Elson Ribeiro\Documents\Visual Studio 2008\Projects\Access Controller\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Elson Ribeiro\Documents\Visual Studio 2008\Projects\Access Controller\obj\Release\Access_Controller.frmRptViewer.resources
+C:\Users\Elson Ribeiro\Documents\Visual Studio 2008\Projects\Access Controller\obj\Release\Access_Controller.frmRelatorio.resources
+C:\Users\Elson Ribeiro\Documents\Visual Studio 2008\Projects\Access Controller\obj\Release\Access_Controller.frmLimpaDados.resources
+C:\Users\Elson Ribeiro\Documents\Visual Studio 2008\Projects\Access Controller\obj\Release\Access_Controller.frmValidacao.resources
+C:\Users\Elson Ribeiro\Documents\Visual Studio 2008\Projects\Access Controller\obj\Release\Access_Controller.frmConfig.resources
+C:\Users\Elson Ribeiro\Documents\Visual Studio 2008\Projects\Access Controller\obj\Release\Access_Controller.frmMain.resources
+C:\Users\Elson Ribeiro\Documents\Visual Studio 2008\Projects\Access Controller\obj\Release\Access_Controller.frmAbout.resources
+C:\Users\Elson Ribeiro\Documents\Visual Studio 2008\Projects\Access Controller\obj\Release\Access_Controller.frmLogin.resources
+C:\Users\Elson Ribeiro\Documents\Visual Studio 2008\Projects\Access Controller\obj\Release\Access_Controller.frmSplashScreen.resources
+C:\Users\Elson Ribeiro\Documents\Visual Studio 2008\Projects\Access Controller\obj\Release\Access_Controller.Resources.resources
+C:\Users\Elson Ribeiro\Documents\Visual Studio 2008\Projects\Access Controller\obj\Release\Access Controller.vbproj.GenerateResource.Cache
+C:\Users\Elson Ribeiro\Documents\Visual Studio 2008\Projects\Access Controller\obj\Release\RdlCompile.cache
+C:\Users\Elson Ribeiro\Documents\Visual Studio 2008\Projects\Access Controller\obj\Release\RdlCompile.compiled
+C:\Users\Elson Ribeiro\Documents\Visual Studio 2008\Projects\Access Controller\obj\Release\Access Controller.exe
+C:\Users\Elson Ribeiro\Documents\Visual Studio 2008\Projects\Access Controller\obj\Release\Access Controller.xml
+C:\Users\Elson Ribeiro\Documents\Visual Studio 2008\Projects\Access Controller\obj\Release\Access Controller.pdb
+C:\Users\Elson Ribeiro\Documents\Visual Studio 2008\Projects\Access Controller\obj\Release\Access Controller.XmlSerializers.dll

@@ -1,0 +1,241 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+AccessController
+</name>
+</assembly>
+<members>
+<member name="M:Access_Controller.wsChamadas.kkk.#ctor">
+	<remarks/>
+</member><member name="E:Access_Controller.wsChamadas.kkk.remotoProdutorCompleted">
+	<remarks/>
+</member><member name="E:Access_Controller.wsChamadas.kkk.evAtivosCompleted">
+	<remarks/>
+</member><member name="E:Access_Controller.wsChamadas.kkk.ptAtivosCompleted">
+	<remarks/>
+</member><member name="E:Access_Controller.wsChamadas.kkk.ptAtivosAllCompleted">
+	<remarks/>
+</member><member name="E:Access_Controller.wsChamadas.kkk.evAtivosAllCompleted">
+	<remarks/>
+</member><member name="E:Access_Controller.wsChamadas.kkk.atAtivosCompleted">
+	<remarks/>
+</member><member name="E:Access_Controller.wsChamadas.kkk.ltAtivosCompleted">
+	<remarks/>
+</member><member name="E:Access_Controller.wsChamadas.kkk.pdAtivosCompleted">
+	<remarks/>
+</member><member name="E:Access_Controller.wsChamadas.kkk.presidioCompleted">
+	<remarks/>
+</member><member name="E:Access_Controller.wsChamadas.kkk.cadeiaCompleted">
+	<remarks/>
+</member><member name="E:Access_Controller.wsChamadas.kkk.presidio2Completed">
+	<remarks/>
+</member><member name="E:Access_Controller.wsChamadas.kkk.cadeia2Completed">
+	<remarks/>
+</member><member name="M:Access_Controller.wsChamadas.kkk.remotoProdutor(System.String@,System.String,System.String@,System.Int32@)">
+	<remarks/>
+</member><member name="M:Access_Controller.wsChamadas.kkk.remotoProdutorAsync(System.String,System.String,System.String,System.Int32)">
+	<remarks/>
+</member><member name="M:Access_Controller.wsChamadas.kkk.remotoProdutorAsync(System.String,System.String,System.String,System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:Access_Controller.wsChamadas.kkk.evAtivos(System.Int32@)">
+	<remarks/>
+</member><member name="M:Access_Controller.wsChamadas.kkk.evAtivosAsync(System.Int32)">
+	<remarks/>
+</member><member name="M:Access_Controller.wsChamadas.kkk.evAtivosAsync(System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:Access_Controller.wsChamadas.kkk.ptAtivos(System.Int32@,System.Int32)">
+	<remarks/>
+</member><member name="M:Access_Controller.wsChamadas.kkk.ptAtivosAsync(System.Int32,System.Int32)">
+	<remarks/>
+</member><member name="M:Access_Controller.wsChamadas.kkk.ptAtivosAsync(System.Int32,System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:Access_Controller.wsChamadas.kkk.ptAtivosAll(System.Int32@,System.Int32)">
+	<remarks/>
+</member><member name="M:Access_Controller.wsChamadas.kkk.ptAtivosAllAsync(System.Int32,System.Int32)">
+	<remarks/>
+</member><member name="M:Access_Controller.wsChamadas.kkk.ptAtivosAllAsync(System.Int32,System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:Access_Controller.wsChamadas.kkk.evAtivosAll(System.Int32@,System.Int32)">
+	<remarks/>
+</member><member name="M:Access_Controller.wsChamadas.kkk.evAtivosAllAsync(System.Int32,System.Int32)">
+	<remarks/>
+</member><member name="M:Access_Controller.wsChamadas.kkk.evAtivosAllAsync(System.Int32,System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:Access_Controller.wsChamadas.kkk.atAtivos(System.Int32@,System.Int32)">
+	<remarks/>
+</member><member name="M:Access_Controller.wsChamadas.kkk.atAtivosAsync(System.Int32,System.Int32)">
+	<remarks/>
+</member><member name="M:Access_Controller.wsChamadas.kkk.atAtivosAsync(System.Int32,System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:Access_Controller.wsChamadas.kkk.ltAtivos(System.Int32@,System.Int32)">
+	<remarks/>
+</member><member name="M:Access_Controller.wsChamadas.kkk.ltAtivosAsync(System.Int32,System.Int32)">
+	<remarks/>
+</member><member name="M:Access_Controller.wsChamadas.kkk.ltAtivosAsync(System.Int32,System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:Access_Controller.wsChamadas.kkk.pdAtivos(System.Int32@,System.Int32)">
+	<remarks/>
+</member><member name="M:Access_Controller.wsChamadas.kkk.pdAtivosAsync(System.Int32,System.Int32)">
+	<remarks/>
+</member><member name="M:Access_Controller.wsChamadas.kkk.pdAtivosAsync(System.Int32,System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:Access_Controller.wsChamadas.kkk.presidio(System.Int32@,System.Int32)">
+	<remarks/>
+</member><member name="M:Access_Controller.wsChamadas.kkk.presidioAsync(System.Int32,System.Int32)">
+	<remarks/>
+</member><member name="M:Access_Controller.wsChamadas.kkk.presidioAsync(System.Int32,System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:Access_Controller.wsChamadas.kkk.cadeia(System.Int32@,System.Int32)">
+	<remarks/>
+</member><member name="M:Access_Controller.wsChamadas.kkk.cadeiaAsync(System.Int32,System.Int32)">
+	<remarks/>
+</member><member name="M:Access_Controller.wsChamadas.kkk.cadeiaAsync(System.Int32,System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:Access_Controller.wsChamadas.kkk.presidio2(System.Int32@,System.Int32,System.String[])">
+	<remarks/>
+</member><member name="M:Access_Controller.wsChamadas.kkk.presidio2Async(System.Int32,System.Int32,System.String[])">
+	<remarks/>
+</member><member name="M:Access_Controller.wsChamadas.kkk.presidio2Async(System.Int32,System.Int32,System.String[],System.Object)">
+	<remarks/>
+</member><member name="M:Access_Controller.wsChamadas.kkk.cadeia2(System.Int32@,System.Int32,System.String[])">
+	<remarks/>
+</member><member name="M:Access_Controller.wsChamadas.kkk.cadeia2Async(System.Int32,System.Int32,System.String[])">
+	<remarks/>
+</member><member name="M:Access_Controller.wsChamadas.kkk.cadeia2Async(System.Int32,System.Int32,System.String[],System.Object)">
+	<remarks/>
+</member><member name="M:Access_Controller.wsChamadas.kkk.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:Access_Controller.wsChamadas.kkk">
+	<remarks/>
+</member><member name="T:Access_Controller.wsChamadas.remotoProdutorCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Access_Controller.wsChamadas.remotoProdutorCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="P:Access_Controller.wsChamadas.remotoProdutorCompletedEventArgs.u">
+	<remarks/>
+</member><member name="P:Access_Controller.wsChamadas.remotoProdutorCompletedEventArgs.fantasiaProdutor">
+	<remarks/>
+</member><member name="P:Access_Controller.wsChamadas.remotoProdutorCompletedEventArgs.idProdutor">
+	<remarks/>
+</member><member name="T:Access_Controller.wsChamadas.remotoProdutorCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Access_Controller.wsChamadas.evAtivosCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Access_Controller.wsChamadas.evAtivosCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="P:Access_Controller.wsChamadas.evAtivosCompletedEventArgs.idProdutor">
+	<remarks/>
+</member><member name="T:Access_Controller.wsChamadas.evAtivosCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Access_Controller.wsChamadas.ptAtivosCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Access_Controller.wsChamadas.ptAtivosCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="P:Access_Controller.wsChamadas.ptAtivosCompletedEventArgs.idProdutor">
+	<remarks/>
+</member><member name="T:Access_Controller.wsChamadas.ptAtivosCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Access_Controller.wsChamadas.ptAtivosAllCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Access_Controller.wsChamadas.ptAtivosAllCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="P:Access_Controller.wsChamadas.ptAtivosAllCompletedEventArgs.idProdutor">
+	<remarks/>
+</member><member name="T:Access_Controller.wsChamadas.ptAtivosAllCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Access_Controller.wsChamadas.evAtivosAllCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Access_Controller.wsChamadas.evAtivosAllCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="P:Access_Controller.wsChamadas.evAtivosAllCompletedEventArgs.idProdutor">
+	<remarks/>
+</member><member name="T:Access_Controller.wsChamadas.evAtivosAllCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Access_Controller.wsChamadas.atAtivosCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Access_Controller.wsChamadas.atAtivosCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="P:Access_Controller.wsChamadas.atAtivosCompletedEventArgs.idProdutor">
+	<remarks/>
+</member><member name="T:Access_Controller.wsChamadas.atAtivosCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Access_Controller.wsChamadas.ltAtivosCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Access_Controller.wsChamadas.ltAtivosCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="P:Access_Controller.wsChamadas.ltAtivosCompletedEventArgs.idProdutor">
+	<remarks/>
+</member><member name="T:Access_Controller.wsChamadas.ltAtivosCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Access_Controller.wsChamadas.pdAtivosCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Access_Controller.wsChamadas.pdAtivosCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="P:Access_Controller.wsChamadas.pdAtivosCompletedEventArgs.idProdutor">
+	<remarks/>
+</member><member name="T:Access_Controller.wsChamadas.pdAtivosCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Access_Controller.wsChamadas.presidioCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Access_Controller.wsChamadas.presidioCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="P:Access_Controller.wsChamadas.presidioCompletedEventArgs.idProdutor">
+	<remarks/>
+</member><member name="T:Access_Controller.wsChamadas.presidioCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Access_Controller.wsChamadas.cadeiaCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Access_Controller.wsChamadas.cadeiaCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="P:Access_Controller.wsChamadas.cadeiaCompletedEventArgs.idProdutor">
+	<remarks/>
+</member><member name="T:Access_Controller.wsChamadas.cadeiaCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Access_Controller.wsChamadas.presidio2CompletedEventHandler">
+	<remarks/>
+</member><member name="P:Access_Controller.wsChamadas.presidio2CompletedEventArgs.Result">
+	<remarks/>
+</member><member name="P:Access_Controller.wsChamadas.presidio2CompletedEventArgs.idProdutor">
+	<remarks/>
+</member><member name="T:Access_Controller.wsChamadas.presidio2CompletedEventArgs">
+	<remarks/>
+</member><member name="T:Access_Controller.wsChamadas.cadeia2CompletedEventHandler">
+	<remarks/>
+</member><member name="P:Access_Controller.wsChamadas.cadeia2CompletedEventArgs.Result">
+	<remarks/>
+</member><member name="P:Access_Controller.wsChamadas.cadeia2CompletedEventArgs.idProdutor">
+	<remarks/>
+</member><member name="T:Access_Controller.wsChamadas.cadeia2CompletedEventArgs">
+	<remarks/>
+</member><member name="T:Access_Controller.dsRelAcessos.AcessosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Access_Controller.dsRelAcessos.EventoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Access_Controller.dsRelAcessos.AcessosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Access_Controller.dsRelAcessos.EventoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Access_Controller.dsRelAcessos.AcessosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Access_Controller.dsRelAcessos.EventoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Access_Controller.dsRelAcessos">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+</members>
+</doc>
